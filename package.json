@@ -1,0 +1,41 @@
+{
+  "name": "shopping-market-mern",
+  "version": "1.0.0",
+  "description": "MERN stack project",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webDeveloper67/shopping-market.git"
+  },
+  "keywords": [
+    "mongodb",
+    "express",
+    "node",
+    "react",
+    "redux"
+  ],
+  "author": "MDee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/webDeveloper67/shopping-market/issues"
+  },
+  "homepage": "https://github.com/webDeveloper67/shopping-market#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.16"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "eslint": "^7.20.0",
+    "eslint-plugin-react": "^7.22.0",
+    "nodemon": "^2.0.7"
+  }
+}
